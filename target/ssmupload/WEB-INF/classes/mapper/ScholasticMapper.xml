@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nengliang.web.dao.ScholasticMapper"> 
+
+
+  <select id="selectParam" resultType="com.nengliang.web.entity.Scholastic">
+  select  id,username,userage,mailbox,usergender,headportrait,creationtime,modifytime from scholastic
+    order by id desc
+  </select>
+  
+  <select id="selectAll" resultType="com.nengliang.web.entity.Scholastic" parameterType="List">
+   select  id,username,userage,mailbox,usergender,headportrait,creationtime,modifytime from scholastic
+    order by id desc limit #{pages},#{limits}
+  </select>
+
+
+
+
+</mapper>
+

@@ -1,0 +1,48 @@
+﻿
+spring,springmvc,mybatis,layui
+
+
+一、导出Excel思路
+
+1. json字符串转json数组，需要jar包：
+ commons-lang，
+commons-collections，
+commons-beanutils，
+ezmorph，
+json-lib-2.4-jdk15.jar，csdn下载
+
+2. 使用POI的HSSF进行导出Excel，导出格式为 xls，需要jar包：
+ <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency> 
+
+3. 使用POI的XSSF进行导出Excel，导出格式为 xlsx，需要jar包：
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17</version>
+</dependency>
+
+4. commons-io包,文件写入到磁盘
+
+5 WeChat: NHNMAMTF
+
+6. 导出Excel位置为：D:\
+
+7. 项目访问：http://localhost:8081/ssmupload/scholastic/listAll
+
+8.实体类
+
+CREATE TABLE `scholastic` (
+   `id` int(255) NOT NULL AUTO_INCREMENT,
+   `username` varchar(255) DEFAULT NULL COMMENT '姓名',
+   `userage` int(255) DEFAULT NULL COMMENT '年龄',
+   `mailbox` varchar(255) DEFAULT NULL COMMENT '邮箱',
+   `usergender` varchar(255) DEFAULT NULL COMMENT '性别',
+   `headportrait` varchar(255) DEFAULT NULL COMMENT '头像',
+   `creationtime` datetime DEFAULT NULL COMMENT '创建时间',
+   `modifytime` datetime DEFAULT NULL COMMENT '修改时间',
+   PRIMARY KEY (`id`)
+ ) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=utf8

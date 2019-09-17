@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:24:16 +0800] "GET /ssmgenerator HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:24:17 +0800] "GET /ssmgenerator/ HTTP/1.1" 200 66 http-bio-8080-exec-2 171
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:24:17 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:25:14 +0800] "GET /ssmgenerator/scholastic/listAll HTTP/1.1" 200 288 http-bio-8080-exec-4 276
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:25:27 +0800] "GET /ssmgenerator/scholastic/selectAll HTTP/1.1" 200 3192 http-bio-8080-exec-5 2335
